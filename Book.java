@@ -14,27 +14,27 @@ public class Book {
         if (pageCount <= 0) {
             throw new IllegalArgumentException("Page count must be positive");
         }
-        
+
         this.title = title.trim();
         this.author = author.trim();
         this.pageCount = pageCount;
         this.status = BookStatus.AVAILABLE;
     }
 
-    public String getTitle() { 
-        return title; 
+    public String getTitle() {
+        return title;
     }
-    
-    public String getAuthor() { 
-        return author; 
+
+    public String getAuthor() {
+        return author;
     }
-    
-    public int getPageCount() { 
-        return pageCount; 
+
+    public int getPageCount() {
+        return pageCount;
     }
-    
-    public BookStatus getStatus() { 
-        return status; 
+
+    public BookStatus getStatus() {
+        return status;
     }
 
     public void borrowBook() {
